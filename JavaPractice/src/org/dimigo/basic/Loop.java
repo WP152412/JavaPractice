@@ -2,7 +2,8 @@
  * 
  */
 package org.dimigo.basic;
-import java.util.*;
+import java.util.Scanner;
+import java.util.Random;
 /**
  * <pre>
  * org.dimigo.basic
@@ -14,7 +15,8 @@ import java.util.*;
  * @vesion : 1.0
  */
 public class Loop {
-	static void main(String[] args) {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		int atk = 100; boolean running = true;
 		while(running) {
 			System.out.println("--------------------");
@@ -25,7 +27,7 @@ public class Loop {
 			System.out.println("9. 종료");
 			System.out.println("--------------------");
 			System.out.println("메뉴 입력 => ");
-			Scanner scanner = new Scanner(System.in);
+			
 			int choice = scanner.nextInt();
 			switch(choice) {
 			case 1: atk += 10; System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + atk); break;
@@ -33,12 +35,13 @@ public class Loop {
 			case 3:
 				String str[] = {"마법사", "영주", "기사", "농민"};
 				int num = new Random().nextInt(4);
-				System.out.println(str[num]); break;
-			case 9: running = false; break;
-			default: System.out.println("이제 공부하세요!");
+				System.out.println(str[num]+"(으)로 설정되었습니다."); break;
+			case 9: System.out.println("이제 공부하세요!"); running = false; break;
+			default: System.out.println("없는 메뉴입니다!");
 			}
-			scanner.close();
+			
 		}
+		scanner.close();
 	}
-
+	
 }
