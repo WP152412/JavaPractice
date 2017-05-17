@@ -1,4 +1,4 @@
-/**
+ /**
  * 
  */
 package org.dimigo.abstractclass;
@@ -7,7 +7,7 @@ package org.dimigo.abstractclass;
  * <pre>
  * org.dimigo.inheritance
  * 	    └ iPhone
- * 1. 개요 :
+ * 1. 개요 : 
  * 2. 작성일: 2017. 5. 15.
  * </pre>
  * @author 15기 신기섭

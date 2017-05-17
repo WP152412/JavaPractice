@@ -25,7 +25,7 @@ public abstract class SmartPhone {
 		this.price = price;
 	}
 	public void turnOn() {}
-	public void turnOff() {
+	public void turnOff() {  
 		System.out.println(model + "의 전원을 끕니다.");
 	}
 	public abstract void pay();

@@ -1,4 +1,4 @@
-/**
+ /**
  * 
  */
 package org.dimigo.abstractclass;
@@ -10,7 +10,7 @@ package org.dimigo.abstractclass;
  * 1. 개요 :
  * 2. 작성일: 2017. 5. 15.
  * </pre>
- * @author 15기 신기섭
+ * @author 15기 신기섭 
  * @version : 1.0
  */
 public class Galaxy extends SmartPhone {
